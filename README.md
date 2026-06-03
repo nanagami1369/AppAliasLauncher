@@ -19,9 +19,9 @@ AppAliasLauncher.exe <エイリアス名.exe> [引数...]
 // コンソールウィンドウは表示されない
 Process.Start(new ProcessStartInfo
 {
-    FileName = aliasPath,
-    Arguments = arguments,
-    UseShellExecute = true, // これを使う事でエイリアスを解析できる
+    FileName = aliasPath, // <エイリアス名.exe>
+    Arguments = arguments, // [引数...]
+    UseShellExecute = true, // ← これを使う事でエイリアスを解析できる
 });
 ```
 
